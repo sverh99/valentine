@@ -168,6 +168,18 @@
     to   { opacity: 1; }
   }
 
+  .celebration-title {
+    font-size: clamp(28px, 6vw, 52px);
+    font-style: italic;
+    background: linear-gradient(135deg, #ff85a2, #ffb6c1, #ff6b9d);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease-out both, shimmer 4s ease-in-out infinite;
+    margin-bottom: 24px;
+  }
+
   .celebration-photo {
     width: clamp(220px, 60vw, 420px);
     height: clamp(220px, 60vw, 420px);
@@ -234,6 +246,7 @@
 </div>
 
 <div class="celebration" id="celebration">
+  <p class="celebration-title">Love of my life</p>
   <img src="photo.jpeg" alt="" class="celebration-photo">
 </div>
 
